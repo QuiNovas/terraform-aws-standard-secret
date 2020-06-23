@@ -18,3 +18,7 @@ output "kms_key_id" {
   value       = aws_kms_key.secret.key_id
 }
 
+output "name" {
+  description = "Friendly name of the secret."
+  value       = aws_secretsmanager_secret.secret.name
+}
